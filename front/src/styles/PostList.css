@@ -1,0 +1,37 @@
+/* src/components/PostList.css */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 250px;
+}
+
+.post-item {
+    padding: 20px;
+    border: 1px solid var(--navbar-border-bottom-color);
+    border-radius: 8px;
+}
+
+.data-user-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.data-user-time p {
+    color: #656565;
+}
+
+.post-item h2 {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.post-item p {
+    margin: 0;
+}
+
+.post-buttons {
+    margin-top: 20px;
+}

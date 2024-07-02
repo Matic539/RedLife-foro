@@ -1,0 +1,40 @@
+.home-back {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid var(--navbar-border-bottom-color);
+    padding-top: 70px;
+}
+
+.home {
+    padding: 110px;
+    background-color: var(--home-background-color);
+}
+
+.home h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(to left,
+            #FFD700,
+            #7B68EE,
+            #3498db,
+            #2ecc71,
+            #FFD700);
+    color: transparent;
+    background-clip: text;
+    background-size: 500%;
+    animation: color 3s linear infinite;
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}

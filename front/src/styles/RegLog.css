@@ -1,0 +1,123 @@
+.back-register-log {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-register-log {
+    position: relative;
+    width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-register-log .home-button {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.container-register-log .theme-button {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+
+.register-log-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid var(--form-border-color);
+    border-radius: 20px;
+}
+
+.register-log h2 {
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.register-log form {
+    padding: 40px 30px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group input {
+    padding: 0 15px;
+    width: 300px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 1px solid var(--form-border-color);
+    background: transparent;
+    color: var(--text-color);
+    outline: none;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+/* input:valid ~ label */
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 14px;
+    padding: 0 2px;
+    background: var(--background-color);
+}
+
+/* input::placeholder {
+    color: transparent;
+} */
+
+.button-log-reg {
+    height: 35px;
+    font-size: 14px;
+    border-radius: 6px;
+    background: transparent;
+    font-weight: bold;
+    color: var(--text-color);
+    border: 3px solid rgb(46, 198, 61);
+    transition: .3s;
+}
+
+.button-log-reg:hover {
+    background-color: rgba(0, 255, 4, 0.503);
+}
+
+.register-log p {
+    padding-top: 20px;
+    color: #959595;
+}
+
+.register-log p a {
+    color: rgb(46, 198, 61);
+}
+
+.register-log p a:hover {
+    color: rgb(0, 255, 26);
+    text-decoration: underline;
+}
